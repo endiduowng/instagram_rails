@@ -5544,3 +5544,877 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 187ms (Views: 178.5ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for 58.187.54.149 at 2018-09-26 17:07:57 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 58.187.54.149 at 2018-09-26 17:07:57 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (6916.1ms)
+  Rendered devise/shared/_links.html.erb (4.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6946.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 7376ms (Views: 7355.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for 58.187.54.149 at 2018-09-26 17:09:17 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HwGlrueed6Gc8cgq/tzqOWiIjQvTx90HtINPZLS7ljie55Crut1QcCAXn+Gxcb1v/3YZU2h6Z0cemaOYmyePDg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HwGlrueed6Gc8cgq/tzqOWiIjQvTx90HtINPZLS7ljie55Crut1QcCAXn+Gxcb1v/3YZU2h6Z0cemaOYmyePDg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (5.4ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/twitter" for 58.187.54.149 at 2018-09-26 17:09:21 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+OAuth::Unauthorized (403 Forbidden):
+  
+oauth (0.5.4) lib/oauth/consumer.rb:236:in `token_request'
+oauth (0.5.4) lib/oauth/consumer.rb:155:in `get_request_token'
+omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+omniauth-twitter (1.4.0) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+omniauth (1.8.1) lib/omniauth/strategy.rb:224:in `request_call'
+omniauth (1.8.1) lib/omniauth/strategy.rb:187:in `call!'
+omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/login" for 58.187.54.149 at 2018-09-26 17:09:29 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (4.9ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registration" for 58.187.54.149 at 2018-09-26 17:09:33 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (7.2ms)
+  Rendered shared/_devisemes.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 58.187.54.149 at 2018-09-26 17:09:48 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WfftyBN6R++yKM3HISUPXbJbfIxW0r4d9rOtdJPVVGksm7V2U6mVJRmTA8ku0wZGfP46iKiw019gz1aKzgE9Wg==", "user"=>{"name"=>"Duong", "email"=>"duong@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "duong@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (5.9ms)
+  Rendered shared/_devisemes.html.erb (1.4ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.2ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 261ms (Views: 79.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/" for 58.187.54.149 at 2018-09-26 17:09:58 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2iW81u7aRDtKVo3rDfdtJfNUOXnZW+cPRuTA2Qs5spxbw4nTs5lj6vaw2iBCWjpzZKqtIWLmXU/s/iwlJKWrqg==", "user"=>{"name"=>"Duong", "email"=>"duong1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "duong1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (5.0ms)
+  Rendered shared/_devisemes.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.1ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 72.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/" for 58.187.54.149 at 2018-09-26 17:10:05 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZFnFm77qpkBsPUby5eK0kRSOsrpQO+je70HKOpodQCrlv/Ce46mBkdDbETmqT+PHg3Am4uuGUp5FWybGtYFZHA==", "user"=>{"name"=>"Duong", "email"=>"duong1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "duong1@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?, ?)[0m  [["email", "duong1@gmail.com"], ["encrypted_password", "$2a$11$ok5eYcSftViq0BOZbWqSX.NCR9uuI6fEWd5g4PeoojnHYVS.mXM0i"], ["created_at", "2018-09-26 17:10:05.689105"], ["updated_at", "2018-09-26 17:10:05.689105"], ["name", "Duong"]]
+  [1m[35m (16.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-09-26 17:10:05.711712"], ["last_sign_in_at", "2018-09-26 17:10:05.711712"], ["current_sign_in_ip", "58.187.54.149"], ["last_sign_in_ip", "58.187.54.149"], ["updated_at", "2018-09-26 17:10:05.713195"], ["id", 3]]
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 198ms (ActiveRecord: 36.5ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-26 17:10:05 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (13, 12, 11, 10, 9, 8, 7, 6, 5, 4)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2[0m
+  Rendered posts/_posts_list.html.erb (110.3ms)
+  Rendered posts/index.html.erb within layouts/application (114.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 194ms (Views: 168.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/3" for 58.187.54.149 at 2018-09-26 17:10:31 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (11.4ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 93ms (Views: 85.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for 58.187.54.149 at 2018-09-26 17:10:33 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered shared/_devisemes.html.erb (0.6ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.0ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 71.2ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/" for 58.187.54.149 at 2018-09-26 17:10:38 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1ulYX/PYqXc739MJ5AvsCnqDHWT5ZOJmQ+POBc2c3VnNxXu5BU4FrgVX3tixV2MWv1bO77NfyL3vWxRGPElWxQ==", "user"=>{"name"=>"Van Duong", "website"=>"", "bio"=>"", "email"=>"duong1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "website" = ?, "bio" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "Van Duong"], ["website", ""], ["bio", ""], ["updated_at", "2018-09-26 17:10:38.217493"], ["id", 3]]
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 35ms (ActiveRecord: 19.4ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-26 17:10:38 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (13, 12, 11, 10, 9, 8, 7, 6, 5, 4)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2[0m
+  Rendered posts/_posts_list.html.erb (26.9ms)
+  Rendered posts/index.html.erb within layouts/application (30.3ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 108ms (Views: 103.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/posts" for 58.187.54.149 at 2018-09-26 17:10:58 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SNl/AqY3Qma2BV/SkbmVwnaEd/0Tn9SbCNkU6bHw+XXJP0oH+3RltwrjCBneFMKU4Xrjpagibtuiw/gVnmzgQw==", "post"=>{"content"=>"Tam dao"}, "commit"=>"Post", "images"=>{"0"=>#<ActionDispatch::Http::UploadedFile:0x007f8fbf0afe00 @tempfile=#<Tempfile:/tmp/RackMultipart20180926-14636-cz4dvo.jpg>, @original_filename="avatar.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[0]\"; filename=\"avatar.jpg\"\r\nContent-Type: image/jpeg\r\n">, "1"=>#<ActionDispatch::Http::UploadedFile:0x007f8fbf0afa40 @tempfile=#<Tempfile:/tmp/RackMultipart20180926-14636-1p2wbrp.jpg>, @original_filename="16002737_1097339587079600_2897238147365656394_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[1]\"; filename=\"16002737_1097339587079600_2897238147365656394_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "2"=>#<ActionDispatch::Http::UploadedFile:0x007f8fbf0af400 @tempfile=#<Tempfile:/tmp/RackMultipart20180926-14636-iysayb.jpg>, @original_filename="16641037_1004841992992794_8743791554513712917_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[2]\"; filename=\"16641037_1004841992992794_8743791554513712917_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Tam dao"], ["user_id", 3], ["created_at", "2018-09-26 17:10:58.731214"], ["updated_at", "2018-09-26 17:10:58.731214"]]
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "photos" ("image", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "zixnj0yb1zq7naf68rnr.png"], ["post_id", 14], ["created_at", "2018-09-26 17:10:58.759893"], ["updated_at", "2018-09-26 17:10:58.759893"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "photos" SET "image" = 'image/upload/v1537981859/zixnj0yb1zq7naf68rnr.png' WHERE "photos"."id" = ?[0m  [["id", 17]]
+  [1m[35m (25.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "photos" ("image", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "ghrce7asq42usqydrlwv.png"], ["post_id", 14], ["created_at", "2018-09-26 17:11:00.827610"], ["updated_at", "2018-09-26 17:11:00.827610"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "photos" SET "image" = 'image/upload/v1537981862/ghrce7asq42usqydrlwv.png' WHERE "photos"."id" = ?[0m  [["id", 18]]
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "photos" ("image", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "itbtjs9ekbnptc8r4uqv.png"], ["post_id", 14], ["created_at", "2018-09-26 17:11:03.018441"], ["updated_at", "2018-09-26 17:11:03.018441"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "photos" SET "image" = 'image/upload/v1537981864/itbtjs9ekbnptc8r4uqv.png' WHERE "photos"."id" = ?[0m  [["id", 19]]
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/posts
+Completed 200 OK in 6780ms (ActiveRecord: 87.0ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-26 17:11:05 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (46.3ms)
+  Rendered posts/index.html.erb within layouts/application (49.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 112ms (Views: 107.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/3" for 58.187.54.149 at 2018-09-26 17:13:43 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 114ms (Views: 109.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 58.187.54.149 at 2018-09-26 17:13:50 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"L+dlg8o+BFMoAgteJ8ySvJmnOEJD0UcmYtPxaajJUdyuAVCGl30jgpTkXJVoYcXqDlmsGvhs/WbIyR2Vh1VI6g=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-26 17:13:50 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 58.187.54.149 at 2018-09-26 17:13:51 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (5.8ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/twitter" for 58.187.54.149 at 2018-09-26 17:13:55 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+OAuth::Unauthorized (403 Forbidden):
+  
+oauth (0.5.4) lib/oauth/consumer.rb:236:in `token_request'
+oauth (0.5.4) lib/oauth/consumer.rb:155:in `get_request_token'
+omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+omniauth-twitter (1.4.0) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+omniauth (1.8.1) lib/omniauth/strategy.rb:224:in `request_call'
+omniauth (1.8.1) lib/omniauth/strategy.rb:187:in `call!'
+omniauth (1.8.1) lib/omniauth/strategy.rb:168:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/login" for 58.187.54.149 at 2018-09-26 17:14:15 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (5.6ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:18:58 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 58.187.54.149 at 2018-09-27 04:18:58 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (358.4ms)
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (397.1ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 608ms (Views: 587.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/login" for 58.187.54.149 at 2018-09-27 04:19:13 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A0t7uTHvwNHJoRZiay9hYYvwlxezsxdoHFrquMyRUUz52AxSgrbC/ISwYXYsBqwMXxJL3BSbEuhZVYsRToTTOg==", "user"=>{"email"=>"duong@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "duong@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2018-09-27 04:19:13.256466"], ["updated_at", "2018-09-27 04:19:13.258130"], ["id", 1]]
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 9], ["current_sign_in_at", "2018-09-27 04:19:13.287172"], ["last_sign_in_at", "2018-08-15 14:12:56.268048"], ["current_sign_in_ip", "58.187.54.149"], ["updated_at", "2018-09-27 04:19:13.288633"], ["id", 1]]
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 278ms (ActiveRecord: 35.9ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:19:13 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (126.9ms)
+  Rendered posts/index.html.erb within layouts/application (133.7ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 319ms (Views: 294.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/14" for 58.187.54.149 at 2018-09-27 04:19:35 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (22.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 95.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/14" for 58.187.54.149 at 2018-09-27 04:19:44 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (8.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 60.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:33:23 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (121.8ms)
+  Rendered posts/index.html.erb within layouts/application (133.1ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 846ms (Views: 752.7ms | ActiveRecord: 3.9ms)
+
+
+Started DELETE "/posts/13" for 58.187.54.149 at 2018-09-27 04:33:41 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PoRH/qRtx0tEvqPJDWUq+2W6A7dCnPAYco17TVbx33bx3j4HdizPcWUjVkDmAK9x8CAZcE5W/kdssxIkEoi3lQ==", "id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:33:42 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (27.3ms)
+  Rendered posts/index.html.erb within layouts/application (30.3ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 102.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/14" for 58.187.54.149 at 2018-09-27 04:33:48 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (25.7ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 214ms (Views: 209.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:33:57 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (23.4ms)
+  Rendered posts/index.html.erb within layouts/application (26.3ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 87.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:34:01 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (44.2ms)
+  Rendered posts/index.html.erb within layouts/application (48.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 175ms (Views: 167.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:36:53 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (26.8ms)
+  Rendered posts/index.html.erb within layouts/application (30.2ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 4569ms (Views: 4563.3ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/posts/14" for 58.187.54.149 at 2018-09-27 04:37:21 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Kvl5UkQFxORWMD/80dt4cyn/QAygULKItGDulbOEYYflowCrlkTM3netynU6vv35vGVay6yavNeqXof89/0JZA==", "id"=>"14"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:37:21 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (43.1ms)
+  Rendered posts/index.html.erb within layouts/application (46.8ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 151ms (Views: 146.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1" for 58.187.54.149 at 2018-09-27 04:37:35 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (128.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 190ms (Views: 185.0ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/logout" for 58.187.54.149 at 2018-09-27 04:37:38 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KNd9nka8VGpfhsSi++3K7aQlmxhfW9DtR/6XUxI7RCPnjQRnlP1cUH4bMSsQiE9nMb+B31OR3rJZwP46VkIswA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2018-09-27 04:37:38.631942"], ["id", 1]]
+  [1m[35m (18.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 34ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:37:38 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 58.187.54.149 at 2018-09-27 04:37:38 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_dummy_phone.html.erb (5.4ms)
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 58.187.54.149 at 2018-09-27 04:37:46 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kP+PV38b3UkqBIDvHTqeqeXcIbI1PjBxbfRAbX67ONzWcQgyQURqpWiU6rb/3KCj/x3rUd2ukVQk9aapWtxHYw==", "user"=>{"email"=>"duong1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "duong1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-09-27 04:37:46.391644"], ["sign_in_count", 2], ["updated_at", "2018-09-27 04:37:46.393225"], ["id", 3]]
+  [1m[35m (18.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 219ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:37:46 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (14, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  Rendered posts/_posts_list.html.erb (26.6ms)
+  Rendered posts/index.html.erb within layouts/application (30.0ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 83.9ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/posts/14" for 58.187.54.149 at 2018-09-27 04:37:49 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MA6/whUtxHboZ6XAX2pF7IDLJN7J9gF8GofMpC3GuUTkyLq2nKWTIObUfy8wRSnjv6KEjUID840vulUkRLN0QQ==", "id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 17]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 18]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 19]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 14]]
+  [1m[35m (18.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 3248ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:37:53 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (13, 12, 11, 10, 9, 8, 7, 6, 5, 4)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2[0m
+  Rendered posts/_posts_list.html.erb (33.1ms)
+  Rendered posts/index.html.erb within layouts/application (36.3ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 119.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:42:29 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (13, 12, 11, 10, 9, 8, 7, 6, 5, 4)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 13], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 12], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 11], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 10], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 9], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 8], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 7], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 6], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 5], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 4], ["LIMIT", 1]]
+  Rendered posts/_posts_list.html.erb (54.0ms)
+  Rendered posts/index.html.erb within layouts/application (57.6ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 161ms (Views: 117.6ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/posts" for 58.187.54.149 at 2018-09-27 04:42:47 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LRQHrTY/+2p6EsLxH5+SPWEiwkk+w+EFvzveMFQzxsD50gLZv7esPHShGB5wsP4yXktiGrU2E/SKBkewPUYLxQ==", "post"=>{"content"=>"3 dao"}, "commit"=>"Post", "images"=>{"0"=>#<ActionDispatch::Http::UploadedFile:0x007fbc51136950 @tempfile=#<Tempfile:/tmp/RackMultipart20180927-3824-7hc0t2.jpg>, @original_filename="16002737_1097339587079600_2897238147365656394_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[0]\"; filename=\"16002737_1097339587079600_2897238147365656394_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, "1"=>#<ActionDispatch::Http::UploadedFile:0x007fbc511367c0 @tempfile=#<Tempfile:/tmp/RackMultipart20180927-3824-delq2n.jpg>, @original_filename="16641037_1004841992992794_8743791554513712917_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[1]\"; filename=\"16641037_1004841992992794_8743791554513712917_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "3 dao"], ["user_id", 3], ["created_at", "2018-09-27 04:42:47.631867"], ["updated_at", "2018-09-27 04:42:47.631867"]]
+  [1m[35m (18.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "photos" ("image", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "qdskx23ih1onayncxtfv.png"], ["post_id", 15], ["created_at", "2018-09-27 04:42:47.660446"], ["updated_at", "2018-09-27 04:42:47.660446"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "photos" SET "image" = 'image/upload/v1538023368/qdskx23ih1onayncxtfv.png' WHERE "photos"."id" = ?[0m  [["id", 20]]
+  [1m[35m (18.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "photos" ("image", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image", "sk1frdapdmb6ycllmbwa.png"], ["post_id", 15], ["created_at", "2018-09-27 04:42:49.717049"], ["updated_at", "2018-09-27 04:42:49.717049"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "photos" SET "image" = 'image/upload/v1538023371/sk1frdapdmb6ycllmbwa.png' WHERE "photos"."id" = ?[0m  [["id", 21]]
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/posts
+Completed 200 OK in 4549ms (ActiveRecord: 58.4ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:42:52 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (15, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 15], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 13], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 12], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 11], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 10], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 9], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 8], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 7], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 6], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 5], ["LIMIT", 1]]
+  Rendered posts/_posts_list.html.erb (32.8ms)
+  Rendered posts/index.html.erb within layouts/application (35.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 121ms (Views: 114.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/posts/13" for 58.187.54.149 at 2018-09-27 04:42:59 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 13]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."post_id" = ? ORDER BY "photos"."id" ASC LIMIT ?[0m  [["post_id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 13], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (7.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 64.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/3" for 58.187.54.149 at 2018-09-27 04:43:17 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 56.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/3" for 58.187.54.149 at 2018-09-27 04:43:22 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/3" for 58.187.54.149 at 2018-09-27 04:43:24 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:43:26 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (15, 13, 12, 11, 10, 9, 8, 7, 6, 5)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IN (3, 2)[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 15], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 13], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 12], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 11], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 10], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 9], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 8], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 7], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 6], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 5], ["LIMIT", 1]]
+  Rendered posts/_posts_list.html.erb (60.8ms)
+  Rendered posts/index.html.erb within layouts/application (64.0ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 125ms (Views: 117.6ms | ActiveRecord: 4.0ms)
+
+
+Started DELETE "/posts/15" for 58.187.54.149 at 2018-09-27 04:43:30 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FEOnS0M4JCLWHjR9z9OIf7e0j3YD8166gorEzQuP37vAhaI/yrBzdNit7pKg/ORwiN0vJYgGrEu3t11NYvoSvg==", "id"=>"15"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 15]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 20]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 21]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 15]]
+  [1m[35m (19.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://instagram-luckyboy2610.c9users.io/
+Completed 302 Found in 2622ms (ActiveRecord: 20.9ms)
+
+
+Started GET "/" for 58.187.54.149 at 2018-09-27 04:43:33 +0000
+Cannot render console from 58.187.54.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at desc LIMIT ?[0m  [["LIMIT", 10]]
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" IN (13, 12, 11, 10, 9, 8, 7, 6, 5, 4)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 13], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 12], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 11], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 10], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 9], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 8], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 7], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 6], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 5], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ? AND "posts"."id" = ? LIMIT ?[0m  [["user_id", 3], ["id", 4], ["LIMIT", 1]]
+  Rendered posts/_posts_list.html.erb (29.4ms)
+  Rendered posts/index.html.erb within layouts/application (32.3ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 87.3ms | ActiveRecord: 2.6ms)
+
+
